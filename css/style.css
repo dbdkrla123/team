@@ -1,0 +1,427 @@
+@import url('reset.css');
+
+@import url('http://db.onlinewebfonts.com/c/6c02f15fdbc9dd7c482b52b06d8e0a6c?family=Super+Mario+256');
+
+@font-face {
+  font-family: 'MaplestoryOTFLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container-fluid{
+    width: 100%;
+    position: relative;
+    padding: 120px 0;
+    background-image: url('../images/main_red.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.d-row>div{
+  float: left;
+}
+.col-3 h1{
+    font-family: "Super Mario 256"; 
+    font-size:70px;
+    font-weight: 900;
+    color: #fff;
+}
+.m1{
+    margin-left: 10%;
+}
+.clearfix{
+  clear: both;
+}
+.main_img{
+    margin: 0 auto;
+    -webkit-animation: breathing 7s ease-in infinite normal;
+    animation: breathing 7s ease-in infinite normal;
+    }
+
+.main_img img{
+      width:100%;
+  }
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  20% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }  
+  50% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  60% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  80% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  90% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  20% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }  
+  50% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  60% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  80% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  90% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.m2{
+    position: absolute;
+    right: 2%;
+    bottom: 15%;
+}
+.clearfix{
+    clear: both;
+}
+
+/* section1 end */
+
+
+
+/* section2 start */
+
+
+.section02{
+    width: 100%;
+    background-image: url('../images/main_blue.png');
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container2{
+  width: 80%;
+  margin: 0 auto;
+}
+.items{
+  width: 100%;
+  margin: 0 auto;
+}
+.items img{
+  width: 320px;
+  height: 320px;
+  margin:20%;
+}
+.box1{
+  float: left;
+  width: 33.3%;
+}
+.modal-bg img{
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.modal-bg{
+  width:100%;
+  height: 100vh;
+  background:rgba(0,0,0,0.9);
+  position: absolute;
+  display: none;
+  z-index: 999;
+}
+.close{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color:#fff;
+  font-size: 50px;
+  cursor: pointer;
+}
+.content{
+  width: 50%;
+  height: 500px;
+  background-color:lightcyan;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+.blur{
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+.mario_text1{
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+  font-family: "Super Mario 256";
+  font-weight:900;
+  color: darkblue;
+}
+.mario_text2{
+  font-size:30px;
+  font-family: "MaplestoryOTFLight"; 
+  color: black;
+}
+
+.box2{
+  float: left;
+  width:33.3%;
+}
+.box3{
+  float: left;
+  width:33.3%;
+}
+.box4{
+  float: left;
+  width:33.3%;
+}
+.box5{
+  float: left;
+  width:33.3%;
+}
+.box6{
+  float: left;
+  width:33.3%;
+}
+
+.items>div>img:hover {
+  animation: shake 0.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/* section2 end */
+
+
+/* section3 start */
+
+.section03{
+  width: 100%;
+  height:937px;
+  background-image: url('../images/main_yellow.png');
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* section3 end */
+
+
+/* media query start*/
+
+@media(max-width:1024px){
+  /* section01 start */
+  .d-row{
+    padding-left:5%;
+  }
+  .m1{
+    margin:0 auto;
+  }
+  .main_img img {
+    width: 70%;
+  }
+  .section01 .w-m-10{
+      width:100%;
+      text-align: center;
+  }
+  .m2{
+      position:static;
+  }
+  /* section01 end */
+
+
+  /* section02 start */
+  .items{
+    margin-left: 15%;
+  }
+  .items img{
+    width:300px;
+    height:300px;
+  }
+  .modal-bg img{
+    width:30%;
+    top: 32%;
+  }
+  .content{
+    position: absolute;
+  }
+}
+
+
+@media(max-width:768px){
+  /* section01 start */
+  .col-3 h1{
+    font-size:50px;
+  }
+  .section01 .w-m-10{
+      width:100%;
+      text-align: center;
+  }    
+  .m2{
+      position:static;
+  }
+  /* section01 end */
+
+  /* section02 start */
+  .items{
+    margin-left: 20%;
+  }
+  .items img{
+    width:200px;
+    height: 200px;
+  }
+  .modal-bg img{
+    top: 35%
+  }
+
+  /* section02 end */
+} 
+
+@media(max-width:540px){
+  .items img{
+    width:150px;
+    height: 150px;
+  }
+  .items{
+    margin-left: 15%;
+  }
+
+  .content{
+    width: 50%;
+    height: 300px;
+    background-color:lightcyan;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+  }
+}
+
+@media(max-width:414px){
+  .items img{
+    width:150px;
+    height:150px;
+  }
+  .items{
+    margin-left: 20%;
+  }
+}
+
+@media(max-width:375px){
+  .col-3 h1{
+    font-size:40px;
+  }
+  .section01 .w-m-10{
+      width:100%;
+      text-align: center;
+  }    
+  .m2{
+      position:static;
+  }    
+  .items img{
+    width:100px;
+    height: 100px;
+  }
+} 
+
+@media(max-width:320px){
+  .col-3 h1{
+    font-size:40px;
+  }
+  .section01 .w-m-10{
+      width:100%;
+      text-align: center;
+  }    
+  .m2{
+      position:static;
+  }    
+
+  .items img{
+    width:100px;
+    height: 100px;
+  }
+  .items{
+    margin-left: 10%;
+  }
+} 
+
+
