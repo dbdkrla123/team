@@ -2,6 +2,32 @@
 
 @import url('http://db.onlinewebfonts.com/c/6c02f15fdbc9dd7c482b52b06d8e0a6c?family=Super+Mario+256');
 
+/* section2 content animation */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+* {
+  box-sizing: border-box;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+/* section2 content animation */
+
 @font-face {
   font-family: 'MaplestoryOTFLight';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
@@ -190,15 +216,148 @@
 }
 .character img{
   width:65%;
-  margin-top: 20%;
+  margin: 15% auto;
 }
-.modal-bg{
+
+/* modal */
+.modal-bg1{
   width:100%;
   height:100%;
   background:rgba(0,0,0,0.9);
   position: absolute;
   display: none;
   z-index: 999;
+}
+.modal-bg1 img{
+  margin-left: 15%;
+}
+.content1{
+  float:left;
+  width: 50%;
+  height: 500px;
+  margin-top: 18%;
+  background-color:#f8d4d3;
+  border: 0.70rem solid;
+  padding: 3vw;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+.modal-bg2{
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  position: absolute;
+  display: none;
+  z-index: 999;
+}
+.modal-bg2 img{
+  width:90%;
+  margin-top:20%;
+}
+.content2{
+  float:left;
+  width: 50%;
+  height: 500px;
+  margin-top: 18%;
+  background-color:#ffcccc;
+  border: 0.70rem solid;
+  padding: 3vw;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+.modal-bg3{
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  position: absolute;
+  display: none;
+  z-index: 999;
+}
+.modal-bg3 img{
+  margin-top:20%;
+  margin-left: 15%;
+}
+.content3{
+  float:left;
+  width: 50%;
+  height: 500px;
+  margin-top: 18%;
+  background-color:#4ba82f;
+  border: 0.70rem solid;
+  padding: 3vw;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+.modal-bg4{
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  position: absolute;
+  display: none;
+  z-index: 999;
+}
+.modal-bg4 img{
+  width:80%;
+  margin-left: 15%;
+}
+.content4{
+  float:left;
+  width: 50%;
+  height: 500px;
+  margin-top: 18%;
+  background-color:#ffbb89;
+  border: 0.70rem solid;
+  padding: 3vw;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+.modal-bg5{
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  position: absolute;
+  display: none;
+  z-index: 999;
+}
+.modal-bg5 img{
+  width:60%;
+  margin-left: 15%;
+  margin-top:20%;
+}
+.content5{
+  float:left;
+  width: 50%;
+  height: 500px;
+  margin-top: 18%;
+  background-color:#00e156;
+  border: 0.70rem solid;
+  padding: 3vw;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+.modal-bg6{
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  position: absolute;
+  display: none;
+  z-index: 999;
+}
+.modal-bg6 img{
+  width:45%;
+  margin-left:20%;
+  margin-top:20%;
+}
+.content6{
+  float:left;
+  width: 50%;
+  height: 500px;
+  margin-top: 18%;
+  background-color:#cebe2c;
+  border: 0.70rem solid;
+  padding: 3vw;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
 }
 .close{
   position: absolute;
@@ -213,8 +372,59 @@
   width: 50%;
   height: 500px;
   margin-top: 18%;
-  background-color:lightcyan;
+  background-color:rgb(250, 206, 30);
+  border: 0.70rem solid;
+  padding: 3vw;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
 }
+
+
+
+/* content animation css start */
+
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgb(28, 3, 247);
+  --c2: rgb(248, 6, 6);
+}
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+@keyframes borderRadial {
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+  60% {
+    --gradX: 50%;
+    --gradY: 100%;
+  }
+  80% {
+    --gradX: 0%;
+    --gradY: 50%;
+  }
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+}
+
+/* content animation css end */
+
+
+
+
+
 .blur{
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
@@ -229,13 +439,15 @@
   font-family: "Super Mario 256";
   font-weight:900;
   color: darkblue;
+  margin:10%;
 }
 .mario_text2{
   font-size:30px;
+  text-align:center;
   font-family: "MaplestoryOTFLight"; 
   color: black;
 }
-
+/* modal end */
 .box2{
   float: left;
   width:33.3%;
@@ -258,7 +470,7 @@
 }
 
 .items>div>img:hover {
-  animation: shake 0.3s;
+  animation: shake 0.45s;
   animation-iteration-count: infinite;
 }
 
@@ -324,7 +536,21 @@
   .items img{
     width:230px;
     height: 230px;
+    animation:boxmove 1.5s infinite linear;
   }
+
+  /* box moving animation start*/
+  @keyframes boxmove{
+    0%,100%{
+      transform: translate(0);
+    }
+    50%{
+      transform: translate(4%,4%);
+    }
+  }
+  /* box moving animation end */
+
+
   .content{
     margin-top:13%;
   }
@@ -332,7 +558,6 @@
     width:80%;
   }
 }
-
 
 @media(max-width:768px){
   /* section01 start */
@@ -350,9 +575,7 @@
 
 
   /* section02 start */
-  .character img{
-    width:70%;
-  }
+
   .items img{
     width:150px;
     height: 150px;
@@ -361,7 +584,19 @@
     margin-top:15%;
     height:300px;
   }
-
+  .modal-bg1 img{
+    margin: 15% auto;
+  }
+  .modal-bg2 img{
+    width:90%;
+    margin: 30% auto;
+  }
+  .modal-bg4 img{
+    width:100%;
+  }
+  .modal-bg6 img{
+    width:50%;
+  }
   /* section02 end */
 } 
 
@@ -419,7 +654,14 @@
     .content{
       width: 100%;
       margin:5% auto;
+      height: 300px;
     }
+    .mario_text1{
+    font-size: 40px;
+}
+    .mario_text2{
+    font-size: 20px;
+}
     /* section02 end */
 }
 
@@ -431,6 +673,19 @@
     width: 100px;
     height: 100px;
   }
+  .character img {
+    width: 40%;
+    margin-left:10%;
+}
+.content{
+  height:180px;
+}
+  .mario_text1{
+    font-size: 30px;
+}
+  .mario_text2{
+    font-size: 15px;
+}
 } 
 
 @media(max-width:320px){
