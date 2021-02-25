@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <ul class="bar">
+        <li class="step01 active">1985</li>
+        <li class="step02 active">1991</li>
+        <li class="step03 active">1997</li>
+        <li class="step04 active">2006</li>
+        <li class="step05 active">2008</li>
+        <li class="step01 active">2017</li>
+    </ul>
+
+
+<!-- timeline -->
+    <div class="cont_box">
+        <!-- 사진 -->
+        <div class="bg_box">
+            <img src="images/supermariobros.jpg" class="img01">
+            <img src="images/supermarioworld.jpg" alt="" class="img02">
+        </div>
+        <!-- 목업 -->
+        <div class="mockup1">
+            <img src="images/tv1.png" class="">
+        </div>
+        <!-- 설명 -->
+        <p class="desc">
+
+        </p>
+    </div>
+
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+            $(function() {
+                $(".step01").click(function(){
+                    $(".img01").fadeIn().css("display","block");
+                    $(".img02").fadeOut().css("display","none");
+                });
+                $(".step02").click(function(){
+                    $(".img01").css("display","none");
+                    $(".img02").css("display","block");
+                });
+            });
+        </script>
+    
+</body>
+</html>
