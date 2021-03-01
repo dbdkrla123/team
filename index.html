@@ -168,10 +168,34 @@
     </section>
 
     <div class="section03">
-        <div class="container3">
-
+        <!-- timeline -->
+        <ul class="bar">
+            <li class="step01 active">1985</li>
+            <li class="step02 active">1991</li>
+            <li class="step03 active">1997</li>
+            <li class="step04 active">2006</li>
+            <li class="step05 active">2008</li>
+            <li class="step06 active">2017</li>
+        </ul>
+        <div class="cont_box">
+            <!-- 사진 -->
+            <div class="bg_box">
+                <img src="images/supermariobros.jpg" class="img01">
+                <img src="images/supermarioworld.jpg" alt="" class="img02">
+                <img src="images/supermarioland.jpg" class="img03">
+                <img src="images/newsupermariobros.jpg" alt="" class="img04">
+                <img src="images/newsupermariobrowii.jpg" class="img05">
+                <img src="images/newsupermarioudeluxe.jpg" alt="" class="img06">
+            </div>
+            <!-- 목업 -->
+            <!-- <div class="mockup1">
+                <img src="images/tv1.png" class="">
+            </div> -->
+            <!-- 설명 -->
+            <p class="desc">
+    
+            </p>
         </div>
-    </div>
     <div class="section04">
 
     </div>
@@ -180,6 +204,7 @@
     </div>
 
     <script src="js/wow.min.js"></script>
+
     <script>
     new WOW().init();
     </script>
@@ -270,7 +295,89 @@
     });
   });
 
+// section3 start
+
+
+// 쌤 애니메이션 소스
+// $(function(){
+//         $(".step01").click(function(){
+            
+//             $(".img01").css("display","block").animate({
+//                 width: "100%"
+//             }).animate({
+//                 width: "50%"
+//             }).fadeIn();
+//             $(".img02").css("display","none");
+//         });
+//         // $(".step02").click(function(){
+//         //     $(".img02").css("display","block").animate({
+//         //         width: "100%"
+//         //     }).animate({
+//         //         width: "50%"
+//         //     });
+//         //     $(".img01").css("display","none");
+//         // });
+//     });
+
+
+  $(function() {
+        $(".step01").click(function(){
+            $(".img01").fadeIn().css("display","block");
+            $(".img02").fadeOut().css("display","none");
+            $(".img03").fadeOut().css("display","none");
+            $(".img04").fadeOut().css("display","none");
+            $(".img05").fadeOut().css("display","none");
+            $(".img06").fadeOut().css("display","none");
+        });
+        $(".step02").click(function(){
+            $(".img02").fadeIn().css("display","block");
+            $(".img01").fadeOut().css("display","none");
+            $(".img03").fadeOut().css("display","none");
+            $(".img04").fadeOut().css("display","none");
+            $(".img05").fadeOut().css("display","none");
+            $(".img06").fadeOut().css("display","none");
+        });
+        $(".step03").click(function(){
+            $(".img03").fadeIn().css("display","block");
+            $(".img01").fadeOut().css("display","none");
+            $(".img02").fadeOut().css("display","none");
+            $(".img04").fadeOut().css("display","none");
+            $(".img05").fadeOut().css("display","none");
+            $(".img06").fadeOut().css("display","none");
+        });
+        $(".step04").click(function(){
+            $(".img04").fadeIn().css("display","block");
+            $(".img01").fadeOut().css("display","none");
+            $(".img02").fadeOut().css("display","none");
+            $(".img03").fadeOut().css("display","none");
+            $(".img05").fadeOut().css("display","none");
+            $(".img06").fadeOut().css("display","none");
+        });
+        $(".step05").click(function(){
+            $(".img05").fadeIn().css("display","block");
+            $(".img01").fadeOut().css("display","none");
+            $(".img02").fadeOut().css("display","none");
+            $(".img03").fadeOut().css("display","none");
+            $(".img04").fadeOut().css("display","none");
+            $(".img06").fadeOut().css("display","none");
+        });
+        $(".step06").click(function(){
+            $(".img06").fadeIn().css("display","block");
+            $(".img01").fadeOut().css("display","none");
+            $(".img02").fadeOut().css("display","none");
+            $(".img03").fadeOut().css("display","none");
+            $(".img04").fadeOut().css("display","none");
+            $(".img05").fadeOut().css("display","none");
+        });
+    });
+
+
+
+// section3 end
+
     </script>
+
+
 
 </body>
 </html>
