@@ -181,20 +181,24 @@
             <!-- 사진 -->
             <div class="bg_box">
                 <img src="images/supermariobros.jpg" class="img01">
-                <img src="images/supermarioworld.jpg" alt="" class="img02">
-                <img src="images/supermarioland.jpg" class="img03">
+                <img src="images/supermarioworld4.jpg" alt="" class="img02">
+                <img src="images/supermarioland2.jpg" class="img03">
                 <img src="images/newsupermariobros.jpg" alt="" class="img04">
                 <img src="images/newsupermariobrowii.jpg" class="img05">
                 <img src="images/newsupermarioudeluxe.jpg" alt="" class="img06">
+                <img src="images/bg-1985.png" alt="" class="bg01">
+                <img src="images/bg-1991.png" alt="" class="bg02">
+                <img src="images/bg-1997.png" alt="" class="bg03">
+                <img src="images/bg-2006.png" alt="" class="bg04">
+                <img src="images/bg-2008.png" alt="" class="bg05">
+                <img src="images/bg-2017.png" alt="" class="bg06">
+                
             </div>
             <!-- 목업 -->
             <!-- <div class="mockup1">
                 <img src="images/tv1.png" class="">
             </div> -->
-            <!-- 설명 -->
-            <p class="desc">
-    
-            </p>
+
         </div>
     <div class="section04">
 
@@ -323,6 +327,7 @@
   $(function() {
         $(".step01").click(function(){
             $(".img01").fadeIn().css("display","block");
+            $("bg01").css({"background":"url(../images/bg-1985.png)"}); 	
             $(".img02").fadeOut().css("display","none");
             $(".img03").fadeOut().css("display","none");
             $(".img04").fadeOut().css("display","none");
@@ -331,6 +336,7 @@
         });
         $(".step02").click(function(){
             $(".img02").fadeIn().css("display","block");
+            $("bg02").css({"background":"url(../images/bg-1991.png)"}); 	
             $(".img01").fadeOut().css("display","none");
             $(".img03").fadeOut().css("display","none");
             $(".img04").fadeOut().css("display","none");
