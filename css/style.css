@@ -500,6 +500,7 @@
 .section03{
   width: 100%;
   background-image: url('../images/bg-1985.png');
+  position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -553,14 +554,18 @@ img{
 }
 
 /* images */
-.cont_box{
-  width:100%;
-}
 
 .bg_box {    
   width: 50%;
   margin: 7% auto;
 }
+.mockup1{
+  position: relative;
+  margin: 0 auto;
+  width: 22%;
+  bottom: 250px;
+}
+
 .img02{
   display: none;
 }
@@ -575,28 +580,6 @@ img{
 }
 .img06{
   display: none;
-}
-.bg01{
-  display: none;
-}
-.bg02{
-  display: none;
-}
-.bg03{
-  display: none;
-}
-.bg04{
-  display: none;
-}
-.bg05{
-  display: none;
-}
-.bg06{
-  display: none;
-}
-.mockup1{
-  margin: 0 auto;
-  width: 22%;
 }
 .mock02{
   display: none;
@@ -614,7 +597,6 @@ img{
 .mock06{
   display: none;
 }
-
 
 
 /* section3 end */

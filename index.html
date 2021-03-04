@@ -181,26 +181,20 @@
             <!-- 사진 -->
             <div class="bg_box">
                 <img src="images/supermariobros.jpg" alt="" class="img01">
-                <img src="images/supermarioworld4.jpg" alt="" class="img02">
+                <img src="images/supermarioworld.jpg" alt="" class="img02">
                 <img src="images/supermarioland2.jpg" alt="" class="img03">
                 <img src="images/newsupermariobros.jpg" alt="" class="img04">
                 <img src="images/newsupermariobrowii.jpg" alt="" class="img05">
                 <img src="images/newsupermarioudeluxe.jpg" alt="" class="img06">
-                <img src="images/bg-1985.png" alt="" class="bg01">
-                <img src="images/bg-1991.png" alt="" class="bg02">
-                <img src="images/bg-1997.png" alt="" class="bg03">
-                <img src="images/bg-2006.png" alt="" class="bg04">
-                <img src="images/bg-2008.png" alt="" class="bg05">
-                <img src="images/bg-2017.png" alt="" class="bg06">
             </div>
             <!-- 목업 -->
             <div class="mockup1">
-                <img src="images/game-1985.png" class="mock01">
-                <img src="images/game-1991.png" class="mock02">
-                <img src="images/game-1997.png" class="mock03">
-                <img src="images/game-2006.png" class="mock04">
-                <img src="images/game-2008.png" class="mock05">
-                <img src="images/game-2017.png" class="mock06">
+                <img src="images/game01.png" class="mock01">
+                <img src="images/game02.png" class="mock02">
+                <img src="images/game03.png" class="mock03">
+                <img src="images/game04.png" class="mock04">
+                <img src="images/game05.png" class="mock05">
+                <img src="images/game06.png" class="mock06">
             </div>
 
         </div>
@@ -328,91 +322,102 @@
 //     });
 
 
-  $(function() {
-        $(".step01").click(function(){
-            $(".img01").fadeIn().css("display","block");
-            $(".img02").fadeIn().css("display","none");
-            $(".mock01").fadeIn().css("display","block");
-            $(".mock02").fadeIn().css("display","none");            
-            $(".section03").css("background","url(images/bg-1985.png)").css("background-repeat","no-repeat");
-        });
-        $(".step02").click(function(){
-            $(".img02").fadeIn().css("display","block");
-            $(".mock02").fadeIn().css("display","block");	
-            $(".section03").css("background","url(images/bg-1991.png)").css("background-repeat","no-repeat");
-            $(".img01").fadeOut().css("display","none");
-            $(".img03").fadeOut().css("display","none");
-            $(".img04").fadeOut().css("display","none");
-            $(".img05").fadeOut().css("display","none");
-            $(".img06").fadeOut().css("display","none");
-            $(".mock01").fadeOut().css("display","none");
-            $(".mock03").fadeOut().css("display","none");
-            $(".mock04").fadeOut().css("display","none");
-            $(".mock05").fadeOut().css("display","none");
-            $(".mock06").fadeOut().css("display","none");
-        });
-        $(".step03").click(function(){
-            $(".img03").fadeIn().css("display","block");
-            $(".mock03").fadeIn().css("display","block");	
-            $(".section03").css({"background":"url(images/bg-1997.png)"}).css("background-repeat","no-repeat");; 	
-            $(".img01").fadeOut().css("display","none");
-            $(".img02").fadeOut().css("display","none");
-            $(".img04").fadeOut().css("display","none");
-            $(".img05").fadeOut().css("display","none");
-            $(".img06").fadeOut().css("display","none");
-            $(".mock01").fadeOut().css("display","none");
-            $(".mock02").fadeOut().css("display","none");
-            $(".mock04").fadeOut().css("display","none");
-            $(".mock05").fadeOut().css("display","none");
-            $(".mock06").fadeOut().css("display","none");
-        });
-        $(".step04").click(function(){
-            $(".img04").fadeIn().css("display","block");
-            $(".mock04").fadeIn().css("display","block");	
-            $(".section03").css({"background":"url(images/bg-2006.png)"}).css("background-repeat","no-repeat");; 	
-            $(".img01").fadeOut().css("display","none");
-            $(".img02").fadeOut().css("display","none");
-            $(".img03").fadeOut().css("display","none");
-            $(".img05").fadeOut().css("display","none");
-            $(".img06").fadeOut().css("display","none");
-            $(".mock01").fadeOut().css("display","none");
-            $(".mock02").fadeOut().css("display","none");
-            $(".mock03").fadeOut().css("display","none");
-            $(".mock05").fadeOut().css("display","none");
-            $(".mock06").fadeOut().css("display","none");
-        });
-        $(".step05").click(function(){
-            $(".img05").fadeIn().css("display","block");
-            $(".mock05").fadeIn().css("display","block");	
-            $(".section03").css({"background":"url(images/bg-2008.png)"}).css("background-repeat","no-repeat");; 	
-            $(".img01").fadeOut().css("display","none");
-            $(".img02").fadeOut().css("display","none");
-            $(".img03").fadeOut().css("display","none");
-            $(".img04").fadeOut().css("display","none");
-            $(".img06").fadeOut().css("display","none");
-            $(".mock01").fadeOut().css("display","none");
-            $(".mock02").fadeOut().css("display","none");
-            $(".mock03").fadeOut().css("display","none");
-            $(".mock04").fadeOut().css("display","none");
-            $(".mock06").fadeOut().css("display","none");
-        });
-        $(".step06").click(function(){
-            $(".img06").fadeIn().css("display","block");
-            $(".mock06").fadeIn().css("display","block");
-            $(".section03").css({"background":"url(images/bg-2017.png)"}).css("background-repeat","no-repeat");; 	
-            $(".img01").fadeOut().css("display","none");
-            $(".img02").fadeOut().css("display","none");
-            $(".img03").fadeOut().css("display","none");
-            $(".img04").fadeOut().css("display","none");
-            $(".img05").fadeOut().css("display","none");
-            $(".mock01").fadeOut().css("display","none");
-            $(".mock02").fadeOut().css("display","none");
-            $(".mock03").fadeOut().css("display","none");
-            $(".mock04").fadeOut().css("display","none");
-            $(".mock05").fadeOut().css("display","none");
-        });
+$(function(){
+    $(".step01").click(function(){
+        $(".img01").fadeIn().css("display","block");
+        $(".mock01").fadeIn().css("display","block");	
+        $(".section03").css("background","url(images/bg-1985.png)")
+        .css("background-repeat","no-repeat")
+        .css("background-position","center")
+        .css("background-size","cover");
+        $(".img02").css("display","none").fadeOut();
+        $(".img03").fadeOut().css("display","none");
+        $(".img04").fadeOut().css("display","none");
+        $(".img05").fadeOut().css("display","none");
+        $(".img06").fadeOut().css("display","none");
+        $(".mock02").fadeOut().css("display","none");
+        $(".mock03").fadeOut().css("display","none");
+        $(".mock04").fadeOut().css("display","none");
+        $(".mock05").fadeOut().css("display","none");
+        $(".mock06").fadeOut().css("display","none");     
     });
-
+    $(".step02").click(function(){
+        $(".img02").fadeIn().css("display","block");
+        $(".mock02").fadeIn().css("display","block");	
+        $(".section03").css("background","url(images/bg-1991.png)")
+        .css("background-repeat","no-repeat");
+        $(".img01").css("display","none").fadeOut();
+        $(".img03").fadeOut().css("display","none");
+        $(".img04").fadeOut().css("display","none");
+        $(".img05").fadeOut().css("display","none");
+        $(".img06").fadeOut().css("display","none");
+        $(".mock01").fadeOut().css("display","none");
+        $(".mock03").fadeOut().css("display","none");
+        $(".mock04").fadeOut().css("display","none");
+        $(".mock05").fadeOut().css("display","none");
+        $(".mock06").fadeOut().css("display","none");
+    });
+    $(".step03").click(function(){
+        $(".img03").fadeIn().css("display","block");
+        $(".mock03").fadeIn().css("display","block");	
+        $(".section03").css({"background":"url(images/bg-1997.png)"}).css("background-repeat","no-repeat");; 	
+        $(".img01").fadeOut().css("display","none");
+        $(".img02").fadeOut().css("display","none");
+        $(".img04").fadeOut().css("display","none");
+        $(".img05").fadeOut().css("display","none");
+        $(".img06").fadeOut().css("display","none");
+        $(".mock01").fadeOut().css("display","none");
+        $(".mock02").fadeOut().css("display","none");
+        $(".mock04").fadeOut().css("display","none");
+        $(".mock05").fadeOut().css("display","none");
+        $(".mock06").fadeOut().css("display","none");
+    });
+    $(".step04").click(function(){
+        $(".img04").fadeIn().css("display","block");
+        $(".mock04").fadeIn().css("display","block");	
+        $(".section03").css({"background":"url(images/bg-2006.png)"}).css("background-repeat","no-repeat");; 	
+        $(".img01").fadeOut().css("display","none");
+        $(".img02").fadeOut().css("display","none");
+        $(".img03").fadeOut().css("display","none");
+        $(".img05").fadeOut().css("display","none");
+        $(".img06").fadeOut().css("display","none");
+        $(".mock01").fadeOut().css("display","none");
+        $(".mock02").fadeOut().css("display","none");
+        $(".mock03").fadeOut().css("display","none");
+        $(".mock05").fadeOut().css("display","none");
+        $(".mock06").fadeOut().css("display","none");
+    });
+    $(".step05").click(function(){
+        $(".img05").fadeIn().css("display","block");
+        $(".mock05").fadeIn().css("display","block");	
+        $(".section03").css({"background":"url(images/bg-2008.png)"}).css("background-repeat","no-repeat");; 	
+        $(".img01").fadeOut().css("display","none");
+        $(".img02").fadeOut().css("display","none");
+        $(".img03").fadeOut().css("display","none");
+        $(".img04").fadeOut().css("display","none");
+        $(".img06").fadeOut().css("display","none");
+        $(".mock01").fadeOut().css("display","none");
+        $(".mock02").fadeOut().css("display","none");
+        $(".mock03").fadeOut().css("display","none");
+        $(".mock04").fadeOut().css("display","none");
+        $(".mock06").fadeOut().css("display","none");
+    });
+    $(".step06").click(function(){
+        $(".img06").fadeIn().css("display","block");
+        $(".mock06").fadeIn().css("display","block");
+        $(".section03").css({"background":"url(images/bg-2017.png)"}).css("background-repeat","no-repeat");; 	
+        $(".img01").fadeOut().css("display","none");
+        $(".img02").fadeOut().css("display","none");
+        $(".img03").fadeOut().css("display","none");
+        $(".img04").fadeOut().css("display","none");
+        $(".img05").fadeOut().css("display","none");
+        $(".mock01").fadeOut().css("display","none");
+        $(".mock02").fadeOut().css("display","none");
+        $(".mock03").fadeOut().css("display","none");
+        $(".mock04").fadeOut().css("display","none");
+        $(".mock05").fadeOut().css("display","none");
+    });
+});
 
 
 // section3 end
