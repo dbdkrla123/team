@@ -196,16 +196,15 @@
     background-position: center;
     background-size: cover;
 }
-
 .container2{
   width: 80%;
   margin: 0 auto;
 }
-.items{
+.box{
   width: 100%;
   margin: 0 auto;
 }
-.items img{
+.box img{
   width: 320px;
   height: 320px;
   margin:20%;
@@ -420,7 +419,7 @@
   width:33.3%;
 }
 
-.items>div>img:hover {
+.box>div>img:hover {
   animation: shake 0.45s;
   animation-iteration-count: infinite;
 }
@@ -507,7 +506,6 @@ img{
   margin: 7% auto;
 }
 
-
 .img02{
   display: none;
 }
@@ -526,10 +524,5 @@ img{
 
 
 /* section3 end */
-
-
-
-
-
 
 
