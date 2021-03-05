@@ -190,7 +190,7 @@
 .section02{
     width: 100%;
     height:100%;
-    background-image: url('../images/main_blue.png');
+    background-image: url('../images/main-bg.png');
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
@@ -469,6 +469,7 @@
 }
 .bar li:before{
   content: url(../images/m.png);
+  display: block;
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -522,7 +523,25 @@ img{
   display: none;
 }
 
+.clearfix{
+  clear: both;
+}
 
 /* section3 end */
 
 
+
+/* section4 start */
+.section04{
+  width: 100%;
+  height:100%;
+  background-image: url('../images/main_yellow.png');
+  /* position: relative; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+/* section4 end */
