@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <style>
+    .center{
+  position: relative;
+}
+.center button{
+  position: absolute;
+  z-index: 10;
+  top: 30%;
+  transform: translateY(100%);
+  width: 71px;
+  height: 71px;
+  border-radius: 100%;
+  background: rgba(0,0,0,.5);
+  border: none;
+}
+.center button.slick-prev{
+left: 0;
+}
+.center button.slick-next{
+right: 0;
+}
+.center img{
+  width: 90%;
+}
+  </style>
+</head>
+<body>
+
+  <section class="center slider">
+    <div>
+      <img src="../team/images/mario_overview/papermario.png">
+    </div>
+    <div>
+      <img src="../team/images/mario_overview/mariomaker2.png">
+    </div>
+    <div>
+      <img src="../team/images/mario_overview/rpg4.png">
+    </div>
+    <div>
+      <img src="../team/images/mario_overview/papermario.png">
+    </div>
+    <div>
+      <img src="../team/images/mario_overview/mariomaker2.png">
+    </div>
+    <div>
+      <img src="../team/images/mario_overview/rpg4.png">
+    </div>
+    <div>
+      <img src="../team/images/mario_overview/papermario.png">
+    </div>
+    <div>
+      <img src="../team/images/mario_overview/mariomaker2.png">
+    </div>
+    <div>
+      <img src="../team/images/mario_overview/rpg4.png">
+    </div>
+  </section>
+
+
+  
+<script type ="text/javascript">
+$('.center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.center{
+  position: relative;
+}
+.center button{
+  position: absolute;
+  z-index: 10;
+  top: 30%;
+  transform: translateY(-50%);
+}
+.center button.slick-prev{
+left: 0;
+}
+.center button.slick-next{
+right: 0;
+}
