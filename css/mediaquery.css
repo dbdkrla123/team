@@ -47,7 +47,9 @@
     }
   
     /* section3 start */
-  
+    .section03{
+      background-size: cover;
+    }
     .bg_box{
       width: 80%;
       margin: 15% auto;
@@ -58,9 +60,17 @@
     .bar li{
         margin-top: 2%;
     }
-    /* section3 end */
+    /* section3 start */
+
+
+    /* section4 start */
+
+
+
+    /* section4 end */
   }
   
+
   @media(max-width:769px){
     /* section01 start */
     .col-3 h1{
@@ -94,7 +104,10 @@
       font-size: 25px;
     }
     /* section02 end */
-  
+  .text>p{
+    font-size: 50px;
+    font-weight: 600;
+  }
   
     /* section03 start */
     .bg_box{
@@ -126,6 +139,10 @@
     }
     .mario_text2{
       font-size: 20px;
+    }
+    .text>p{
+      font-size: 40px;
+      font-weight: 500;
     }
     /* section02 end */
   
@@ -192,7 +209,7 @@
       }
       .bg_box {
         width: 80%;
-        margin: 18% auto;
+        margin: 30% auto;
     }
         .bar li{
         margin-top: 1%;
@@ -212,10 +229,24 @@
   .content{
     height:180px;
   }
+
   /* section2 start */
-  
+  .text>p{
+    font-size: 30px;
+    font-weight: 400;
+  }
   
   /* section2 end */
+  .text>.subtitle{
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  /* section3 start */
+  /* .bg_box{
+  margin: 30% auto;
+  } */
+  /* section3 end */
   } 
   
   @media(max-width:321px){
@@ -235,3 +266,7 @@
     .mario_text2 {
     font-size: 15px;
     } 
+    .text>p{
+      font-size: 25px;
+      font-weight: 300;
+    }
