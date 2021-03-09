@@ -2,6 +2,9 @@
 
 @media(max-width:1025px){
     /* section01 start */
+    .side-menu{
+      display: none;
+    }
     .d-row{
       padding-left:5%;
     }

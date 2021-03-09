@@ -509,7 +509,7 @@ display:block;
   position: relative;
   background-repeat: no-repeat;
   /* background-position: center; */
-  background-size: 100%
+  background-size: 100%;
 }
 .bar{
   font-family: 'MaplestoryOTFLight';
@@ -690,7 +690,6 @@ figure.snip1200 figcaption {
   left: 7%;
   right: 7%;
   bottom: 45%;
-  /* border: 1px solid white; */
   border-width: 1px 1px 0;
 }
 figure.snip1200 .heading {
