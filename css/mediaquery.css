@@ -48,7 +48,6 @@
     .character img{
       width: 80%;
     }
-  
     /* section3 start */
     .section03{
       background-size: cover;
@@ -126,10 +125,10 @@
   
   @media(max-width:541px){
   
-    .box img{
-      width:120px;
-      height: 120px;
-    }
+    .box img {
+      width: 90px;
+      height: 90px;
+  }
   
     /*section02 start  */
   

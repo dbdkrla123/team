@@ -267,7 +267,7 @@ display:block;
 }
 .box{
   width: 100%;
-  margin: 0 auto;
+  margin: 3% auto;
 }
 .box img{
   width: 320px;
@@ -304,7 +304,6 @@ display:block;
   }
   .modal-bg1{
     width:100%;
-
     background:rgba(0,0,0,0.9);
     position: absolute;
     display: none;
@@ -508,7 +507,7 @@ display:block;
   background-image: url('../images/section2-01.png');
   position: relative;
   background-repeat: no-repeat;
-  /* background-position: center; */
+  background-position: center;
   background-size: 100%;
 }
 .bar{
