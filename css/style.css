@@ -682,7 +682,7 @@ figure.snip1200 * {
 figure.snip1200 img {
   max-width: 100%;
   position: relative;
-  opacity: 0.9;
+  opacity: 0.6;
 }
 figure.snip1200 figcaption {
   position: absolute;
@@ -690,7 +690,7 @@ figure.snip1200 figcaption {
   left: 7%;
   right: 7%;
   bottom: 45%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-width: 1px 1px 0;
 }
 figure.snip1200 .heading {
@@ -752,14 +752,15 @@ figure.snip1200 a {
 }
 figure.snip1200:hover img,
 figure.snip1200.hover img {
-  opacity: 0.25;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  opacity: 0.3;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 figure.snip1200:hover figcaption,
 figure.snip1200.hover figcaption {
   top: 7%;
   bottom: 7%;
+  border: 1px solid white;
 }
 figure.snip1200:hover p,
 figure.snip1200.hover p {
