@@ -761,6 +761,8 @@ figure.snip1200.hover figcaption {
   top: 7%;
   bottom: 7%;
   border: 1px solid white;
+  border-bottom: none;
+  border-radius: 25px 25px 0px 0px;
 }
 figure.snip1200:hover p,
 figure.snip1200.hover p {
