@@ -53,8 +53,8 @@
       background-size: cover;
     }
     .bg_box{
-      width: 80%;
-      margin: 15% auto;
+      width: 70%;
+      margin: 0 auto;
     }
     .bar{
         font-size: 35px;
@@ -63,7 +63,9 @@
         margin-top: 2%;
     }
     /* section3 start */
-
+    .section03>img{
+      background-size: cover;
+    }
 
     /* section4 start */
 
@@ -113,8 +115,8 @@
   
     /* section03 start */
     .bg_box{
-      width: 80%;
-      margin: 15% auto;
+      width: 60%;
+
     }
     .bar {
         font-size: 25px;
@@ -153,10 +155,6 @@
       font-size: 20px;
       font-weight: 500;
     }
-    .bg_box {
-      width: 80%;
-      margin: 18% auto;
-  }
     /* section03 end */
   }
   
@@ -209,11 +207,7 @@
         font-size: 17px;
         font-weight: 400;
       }
-      .bg_box {
-        width: 80%;
-        margin: 30% auto;
-    }
-        .bar li{
+      .bar li{
         margin-top: 1%;
     }
 

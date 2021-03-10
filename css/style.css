@@ -1,13 +1,13 @@
 @import url('reset.css');
 
-@import url('http://db.onlinewebfonts.com/c/6c02f15fdbc9dd7c482b52b06d8e0a6c?family=Super+Mario+256');
+@import url('https://db.onlinewebfonts.com/c/6c02f15fdbc9dd7c482b52b06d8e0a6c?family=Super+Mario+256');
 
 /* section2 content animation */
 @import url("https://fonts.googleapis.com/css?family=Raleway:400");
 
 /* section3 font */
 
-@import url(http://fonts.googleapis.com.css?family=Roboto:400,100);
+@import url(https://fonts.googleapis.com.css?family=Roboto:400,100);
 
 * {
   box-sizing: border-box;
@@ -304,6 +304,7 @@ display:block;
   }
   .modal-bg1{
     width:100%;
+    height: 100%;
     background:rgba(0,0,0,0.9);
     position: absolute;
     display: none;
@@ -311,6 +312,7 @@ display:block;
   }
   .modal-bg2{
     width:100%;
+    height: 100%;
     background:rgba(0,0,0,0.9);
     position: absolute;
     display: none;
@@ -318,6 +320,7 @@ display:block;
   }
   .modal-bg3{
     width:100%;
+    height: 100%;
     background:rgba(0,0,0,0.9);
     position: absolute;
     display: none;
@@ -326,6 +329,7 @@ display:block;
   
   .modal-bg4{
     width:100%;
+    height: 100%;
     background:rgba(0,0,0,0.9);
     position: absolute;
     display: none;
@@ -334,6 +338,7 @@ display:block;
   
   .modal-bg5{
     width:100%;
+    height: 100%;
     background:rgba(0,0,0,0.9);
     position: absolute;
     display: none;
@@ -342,6 +347,7 @@ display:block;
   
   .modal-bg6{
     width:100%;
+    height: 100%;
     background:rgba(0,0,0,0.9);
     position: absolute;
     display: none;
@@ -555,7 +561,7 @@ display:block;
 .bar li.active + li:after{
  background-color: #fff; 
 }
-img{
+.section03>.cont_box>.bg_box img{
   width: 100%;
 }
 
@@ -563,7 +569,9 @@ img{
 
 .bg_box {    
   width: 50%;
-  margin: 7% auto;
+  margin: 0 auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 /* .img01{
   display: none;
@@ -642,6 +650,9 @@ img{
   border-radius: 100%;
   background: rgba(0,0,0,.5);
   border: none;
+}
+.center button:focus{
+  display: none;
 }
 .center button.slick-prev{
 left: 0;
@@ -770,3 +781,45 @@ figure.snip1200.hover p {
 }
 
 /* section4 end */
+
+
+/* section5 start */
+
+.section05{  
+  width: 100%;
+  background-image: url('../images/main_yellow.png');
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.section05 .text>p{
+  font-family: "Super Mario 256"; 
+  text-align: center;
+  font-size:70px;
+  font-weight: 500;
+  color: rgb(0, 0, 253);
+}
+
+.section05 .text>.subtitle{
+  font-family: "Super Mario 256"; 
+  text-align: center;
+  font-size:30px;
+  font-weight: 300;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.container5{
+  width: 100%;
+}
+.products>ul>li{
+  float: left;
+  width: 33.3%;
+}
+.products ul> li>img{
+  width: 100%;
+}
+
+/* section5 end */
