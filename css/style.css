@@ -5,9 +5,6 @@
 /* section2 content animation */
 @import url("https://fonts.googleapis.com/css?family=Raleway:400");
 
-/* section3 font */
-
-@import url(https://fonts.googleapis.com.css?family=Roboto:400,100);
 
 * {
   box-sizing: border-box;
@@ -80,7 +77,7 @@
 
 .side-menu ul li:hover {
   background-color: #1a4ab2; /*you can make different colors depending on the nth-child like above*/
-  -webkit-transform: translateX(10em);
+  -webkit-transform: translateX(7em);
   transform: translateX(10em);/*equal to left in the .side-menu*/
 }
 .side-menu ul li a {
@@ -267,12 +264,13 @@ display:block;
 }
 .box{
   width: 100%;
-  margin: 3% auto;
+  margin: 5% auto;
+  text-align: center;
 }
 .box img{
   width: 320px;
   height: 320px;
-  margin:20%;
+  margin: 10%;
 }
 .box1{
   float: left;
@@ -379,6 +377,7 @@ display:block;
   top: 5%;
   right: 5%;
   color:#fff;
+  font-family: "Super Mario 256";
   font-size: 50px;
   cursor: pointer;
 }
@@ -438,8 +437,6 @@ display:block;
 
 
 
-
-
 .blur{
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
@@ -483,7 +480,6 @@ display:block;
   float: left;
   width:33.3%;
 }
-
 .box>div>img:hover {
   animation: shake 0.45s;
   animation-iteration-count: infinite;
@@ -560,6 +556,9 @@ display:block;
 }
 .bar li.active + li:after{
  background-color: #fff; 
+}
+.cont_box{
+  padding-top: 5%;
 }
 .section03>.cont_box>.bg_box img{
   width: 100%;
@@ -779,47 +778,203 @@ figure.snip1200.hover p {
   -webkit-transition-delay: 0.35s;
   transition-delay: 0.35s;
 }
-
+.clearfix{
+  clear: both;
+}
 /* section4 end */
 
 
 /* section5 start */
 
-.section05{  
+
+
+:root {
+  --container-bg-color: #333;
+  --left-bg-color: rgba(223, 99, 44, 0.7);
+  --left-button-hover-color: rgba(255, 255, 255, 0.3);
+  --middle-bg-color: rgba(223, 99, 44, 0.7);
+  --middle-button-hover-color: rgba(255, 255, 255, 0.3);
+  --right-bg-color: rgba(223, 99, 44, 0.7);
+  --right-button-hover-color: rgba(255, 255, 255, 0.3);
+  --hover-width: 36%;
+  --other-width: 32%;
+  --speed: 500ms;
+}
+
+html, body {
+  padding:0;
+  margin:0;
   width: 100%;
-  background-image: url('../images/main_yellow.png');
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-}
-.section05 .text>p{
-  font-family: "Super Mario 256"; 
-  text-align: center;
-  font-size:70px;
-  font-weight: 500;
-  color: rgb(0, 0, 253);
+  height: 100%;
+  overflow-x: hidden;
 }
 
-.section05 .text>.subtitle{
-  font-family: "Super Mario 256"; 
-  text-align: center;
-  font-size:30px;
-  font-weight: 300;
-  margin-top: 10px;
+.container h1 {
+  font-family: 'MaplestoryOTFLight';
+  font-size: 4rem;
   color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }
 
-.container5{
-  width: 100%;
-}
-.products>ul>li{
-  float: left;
-  width: 33.3%;
-}
-.products ul> li>img{
-  width: 100%;
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  height: 2.5rem;
+  padding-top: 1.5%;
+  width: 15rem;
+  text-align: center;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-family: ;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
 }
 
+.split.left .button:hover {
+  background-color: var(--left-button-hover-color);
+  border-color: var(--left-button-hover-color);
+}
+
+.split.middle .button:hover {
+  background-color: var(--middle-button-hover-color);
+  border-color: var(--middle-button-hover-color);
+}
+
+.split.right .button:hover {
+  background-color: var(--right-button-hover-color);
+  border-color: var(--right-button-hover-color);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--container-bg-color);
+}
+
+.split {
+  position: relative;
+  width: 33%;
+  height: 100%;
+  float:left;
+  overflow: hidden;
+}
+
+.split.left {
+  background: url('../images/split_mario1.jfif') center center no-repeat;
+  background-size: cover;
+}
+
+.split.left:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--left-bg-color);
+}
+
+.split.middle {
+  background: url('../images/split_mario4.jfif') center center no-repeat;
+  background-size: cover;
+}
+
+.split.middle:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--middle-bg-color);
+}
+
+
+.split.right {
+  background: url('../images/split_mario3.jfif') center center no-repeat;
+  background-size: cover;
+}
+
+.split.right:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--right-bg-color);
+}
+
+.split.left, .split.middle, .split.right, .split.right:before, .split.middle:before, .split.left:before {
+  transition: var(--speed) all ease-in-out;
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .middle {
+  width: var(--other-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-left .right:before {
+  zz-index: 2;
+}
+
+
+.hover-middle .middle {
+  width: var(--hover-width);
+}
+
+.hover-middle .left {
+  width: var(--other-width);
+}
+.hover-middle .right {
+  width: var(--other-width);
+}
+
+.hover-middle .middle:before {
+  zz-index: 2;
+}
+
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .middle {
+  width: var(--other-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+.hover-right .left:before {
+  zz-index: 2;
+}
+
+@media(max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .button {
+    width: 12rem;
+  }
+}
+
+@media(max-height: 700px) {
+  .button {
+    top: 70%;
+  }
+}
 /* section5 end */

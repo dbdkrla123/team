@@ -23,7 +23,7 @@
                 <li><a href="#section02">introduce<span><i class="fa fa-users"></i></span></a></li>
                 <li><a href="#section03">timeline<span><i class="fa fa-bookmark"></i></span></a></li>
                 <li><a href="#section04">serise<span><i class="fa fa-book"></i></span></a></li>
-                <li><a href="#section05">location<span><i class="fa fa-compass"></i></span></a></li>
+                <li><a href="#section05">products<span><i class="fa fa-gift"></i></span></a></li>
                 <li><a href="#section06">about Mario<span><i class="fa fa-gamepad"></i></span></a></li>
             </ul>
         </nav>
@@ -338,31 +338,28 @@
         </div>    
     </div>
 </section>  
+<div class="clearfix"></div>
 <!--section04 end  -->     
 
 
+<!-- section05 start -->
 
-<section class="section05" id="section05">
-    <div class="container5">
-        <div class="text">
-            <p>35th Related products</p>
-            <p class="subtitle">limited edition</p>
-        </div>
-        <ul class="products">
-            <li class="pro_01">
-                <img src="images/product/product01.png">
-            </li>
-            <li class="pro_02">
-                <img src="images/product/product02.png">
-            </li>
-            <li class="pro_03">
-                <img src="images/product/product03.png">
-            </li>
-        </div>
+<div class="container" id="section05">
+    <div class="split left">
+      <h1>슈퍼 마리오 <br>3D 컬렉션</h1>
+      <a href="https://www.nintendo.co.kr/software/switch/avp3a/index.html" target="_blank" class="button">More INFORMATION</a>
     </div>
+    <div class="split middle">
+      <h1>슈퍼 마리오<br>브라더스 35</h1>
+      <a href="https://www.nintendo.co.kr/software/switch/ayama/index.html"target="_blank" class="button">More INFORMATION</a>
+    </div>
+      <div class="split right">
+      <h1>game & Switch</h1>
+      <a href="https://www.nintendo.co.kr/gamewatch/"target="_blank" class="button">More INFORMATION</a>
+    </div>
+</div>
 
-</section>
-
+<!-- section05 end -->
 
 
 
@@ -372,7 +369,7 @@
 
 
     <script src="js/wow.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
 
     <script>
     new WOW().init();
@@ -465,30 +462,9 @@
     });
   });
 
-// section3 start
 
 
-// 쌤 애니메이션 소스
-// $(function(){
-//         $(".step01").click(function(){
-            
-//             $(".img01").css("display","block").animate({
-//                 width: "100%"
-//             }).animate({
-//                 width: "50%"
-//             }).fadeIn();
-//             $(".img02").css("display","none");
-//         });
-//         // $(".step02").click(function(){
-//         //     $(".img02").css("display","block").animate({
-//         //         width: "100%"
-//         //     }).animate({
-//         //         width: "50%"
-//         //     });
-//         //     $(".img01").css("display","none");
-//         // });
-//     });
-
+//   section03
 
 $(function(){
     $(".step01").click(function(){
@@ -622,7 +598,7 @@ $('.center').slick({
         arrows: false,
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 3
+        slidesToShow: 1
       }
     },
     {
@@ -637,6 +613,38 @@ $('.center').slick({
   ]
 });
 
+
+
+// section05
+
+const left = document.querySelector(".left");
+const middle = document.querySelector(".middle");
+const right = document.querySelector(".right");
+const container = document.querySelector(".container");
+
+left.addEventListener("mouseenter", () => {
+  container.classList.add("hover-left");
+});
+
+left.addEventListener("mouseleave", () => {
+  container.classList.remove("hover-left");
+});
+
+middle.addEventListener("mouseenter", () => {
+  container.classList.add("hover-middle");
+});
+
+middle.addEventListener("mouseleave", () => {
+  container.classList.remove("hover-middle");
+});
+
+right.addEventListener("mouseenter", () => {
+  container.classList.add("hover-right");
+});
+
+right.addEventListener("mouseleave", () => {
+  container.classList.remove("hover-right");
+});
 
     </script>
 

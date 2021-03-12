@@ -45,9 +45,18 @@
       }
     }
     /* box moving animation end */
+
     .character img{
       width: 80%;
+      margin: 17% auto;
     }
+    .content{
+      margin-top: 10%;
+      height: 400px;
+    }
+    /* section02 end */
+
+
     /* section3 start */
     .section03{
       background-size: cover;
@@ -66,13 +75,22 @@
     .section03>img{
       background-size: cover;
     }
+    .cont_box {
+      padding-top: 10%;
+  }
 
     /* section4 start */
 
-
-
     /* section4 end */
+
+    /* section5 start */
+    .center button {
+      top: 22%;
   }
+  .products li>p {
+    font-size: 25px;
+}
+    /* section5 end */
   
 
   @media(max-width:769px){
@@ -115,14 +133,21 @@
   
     /* section03 start */
     .bg_box{
-      width: 60%;
-
+      width: 70%;
     }
     .bar {
         font-size: 25px;
     }
     /* section03 end */
-  
+    .center button {
+      top: 17%;
+  }
+
+  /* section05 start */
+  .products li>p {
+    font-size: 20px;
+    font-weight: 500;
+  }
   } 
   
   @media(max-width:541px){
@@ -135,9 +160,9 @@
     /*section02 start  */
   
     .content {
-      margin-top: 15%;
-      height: 250px;
-    }
+      margin-top: 14%;
+      height: 200px;
+  }
     .mario_text1{
       font-size: 30px;
     }
@@ -148,16 +173,31 @@
       font-size: 40px;
       font-weight: 500;
     }
+    .character img {
+      margin: 10% auto;
+  }
     /* section02 end */
   
     /* section03 start */
     .bar{
-      font-size: 20px;
-      font-weight: 500;
+      font-size: 18px;
+      font-weight: 400;
     }
+    .cont_box {
+      padding-top: 15%;
+  }
     /* section03 end */
   }
   
+    .section05 .text>p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+    .products li>p {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
   @media(max-width:415px){
       .box1{
         width:50%;
@@ -184,17 +224,18 @@
         margin-top:10%;
         margin-left:20%;
       }
-      .character img{
-        width: 60%;
-        margin:0 auto;
-      }
+      .character img {
+        width: 50%;
+        margin: 0 auto;
+    }
       .content{
         width: 100%;
-        height: 200px;
+        height: 150px;
         margin-top: 5%;
       }
       .mario_text1 {
         font-size: 29px;
+        margin: 6%;
       }
       .mario_text2 {
       font-size: 18px;
@@ -202,18 +243,42 @@
       /* section02 end */
   
       /* section03 start */
-  
-      .bar{
+      .bar {
         font-size: 17px;
-        font-weight: 400;
-      }
-      .bar li{
-        margin-top: 1%;
+        font-weight: 600;
     }
-
+      .cont_box {
+      padding-top: 20%;
+      }
+      .bar li:before{
+        content: url(../images/m2.png);
+        margin: 10px auto 10px auto;
+      }
       /* section03 end */
 
-  
+      /* section05 start */
+      .text{
+        padding-top: 11%;
+      }
+      .section05 .text>.subtitle {
+        font-size: 1.5rem;
+      font-weight: 200;
+      }
+      .products li {
+        float: none;
+        width: 100%;
+        padding: 5%;
+        margin-top: 10%;
+      }
+      .products li>img {
+        width: 70%;
+      }
+      .products li>p {
+        font-size: 20px;
+        font-weight: 700;
+      }
+    /* section05 end */
+
   @media(max-width:376px){
     .container2{
       width: 100%;
