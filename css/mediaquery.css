@@ -174,7 +174,9 @@
       font-size: 30px;
     }
     .mario_text2{
-      font-size: 20px;
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: -8px;
     }
     .text>p{
       font-size: 40px;
@@ -252,10 +254,12 @@
       }
       .mario_text1 {
         font-size: 29px;
-        margin: 6%;
+        margin: 3%;
       }
       .mario_text2 {
-      font-size: 18px;
+        line-height: 23px;
+        margin-top: -7px;
+        font-size: 17px;
       }
       /* section02 end */
   
@@ -269,7 +273,7 @@
       }
       .bar li:before{
         content: url(../images/m2.png);
-        margin: 10px auto 10px auto;
+        margin: 10px auto 0 auto;
       }
       /* section03 end */
 
@@ -304,7 +308,7 @@
   .box {
     margin: 10% auto;
     padding-bottom: 125%;
-}
+  }
   /* section2 end */
   .text>.subtitle{
     font-size: 20px;
@@ -317,8 +321,18 @@
   .character img{
     width: 60%;
   }
+  .mario_text2 {
+    font-size: 15px;
+}
+.mario_text2 {
+  line-height: 23px;
+  margin-top: 11px;
+}
   /* section3 start */
-
+  .bar {
+    font-size: 14px;
+    font-weight: 600;
+}
 
   /* section3 end */
   } 
@@ -345,12 +359,16 @@
       font-size: 20px;
     } 
     .mario_text2 {
-    font-size: 15px;
-    } 
+      font-size: 13px;
+  }
     .text>p{
       font-size: 25px;
       font-weight: 300;
     }
+    .bar {
+      font-size: 12px;
+      font-weight: 300;
+  }
   }
 
   @media(max-width:281px){
