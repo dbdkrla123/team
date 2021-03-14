@@ -68,12 +68,11 @@
   transition: transform .5s, background-color .5s, color .5s;
 }
 /*the colors of the different columns*/
-.side-menu ul li:nth-child(1) { background-color: #44a9f1;}
-.side-menu ul li:nth-child(2) { background-color: #1a4ab2;}
+.side-menu ul li:nth-child(1) { background-color: #cb2027;}
+.side-menu ul li:nth-child(2) { background-color: #fd7404;}
 .side-menu ul li:nth-child(3) { background-color: #00a300;}
 .side-menu ul li:nth-child(4) { background-color: #ffc40d;}
 .side-menu ul li:nth-child(5) { background-color: #1e7145;}
-.side-menu ul li:nth-child(6) { background-color: #cb2027;}
 
 .side-menu ul li:hover {
   background-color: #1a4ab2; /*you can make different colors depending on the nth-child like above*/
@@ -299,13 +298,12 @@ display:block;
     padding: 3vw;
     border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
     animation: borderRotate var(--d) linear infinite forwards;
+    background-image: url(../images/bg_logo7.png);
+    background-size: cover;
   }
   .modal-bg1{
     width:100%;
-<<<<<<< HEAD
-=======
     height: 100%;
->>>>>>> 48f40263c6d8a4521c6f1011e971077e96968784
     background:rgba(0,0,0,0.9);
     position: absolute;
     background-size: cover;
@@ -355,26 +353,6 @@ display:block;
     display: none;
     z-index: 999;
   }
-
-  .bg_1{
-    background-color: #f8d4d3  !important;
-  }
-  .bg_2{
-    background-color: #ffcccc !important;
-  }
-  .bg_3{
-    background-color: #4ba82f !important;
-  }
-  .bg_4{
-    background-color: #ffbb89 !important;
-  }
-  .bg_5{
-    background-color: #00e156 !important;
-  }
-  .bg_6{
-    background-color: #cebe2c !important;
-  }
-
 
 .close{
   position: absolute;
@@ -460,6 +438,8 @@ display:block;
 .mario_text2{
   font-size:30px;
   text-align:center;
+  line-height: 40px;
+  margin-top: -20px;
   font-family: "MaplestoryOTFLight"; 
   color: black;
 }

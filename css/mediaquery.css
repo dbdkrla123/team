@@ -52,10 +52,10 @@
 
     .character img{
       width: 80%;
-      margin: 17% auto;
+      margin: 55% auto;
     }
     .content{
-      margin-top: 10%;
+      margin-top: 36%;
       height: 400px;
     }
     /* section02 end */
@@ -119,7 +119,7 @@
       height: 150px;
     }
     .content {
-      margin-top: 13%;
+      margin-top: 30%;
       height: 350px;
     }
   
@@ -167,8 +167,8 @@
     /*section02 start  */
   
     .content {
-      margin-top: 14%;
-      height: 200px;
+      margin-top: 33%;
+      height: 230px;
   }
     .mario_text1{
       font-size: 30px;
@@ -181,7 +181,7 @@
       font-weight: 500;
     }
     .character img {
-      margin: 10% auto;
+      margin: 57% auto;
   }
     /* section02 end */
   
@@ -235,7 +235,7 @@
       .character{
         width:100%;
         margin-top:10%;
-        margin-left:20%;
+        margin-left: 26%;
       }
       .box {
         margin: 7% auto;
@@ -247,8 +247,8 @@
       }
       .content{
         width: 100%;
-        height: 150px;
-        margin-top: 5%;
+        height: 180px;
+        margin-top: 10%;
       }
       .mario_text1 {
         font-size: 29px;
@@ -310,7 +310,13 @@
     font-size: 20px;
     font-weight: 200;
   }
-
+  .character{
+    margin-top: 21%;
+    margin-left: 20%;
+  }
+  .character img{
+    width: 60%;
+  }
   /* section3 start */
 
 
@@ -331,8 +337,8 @@
     }
     .content{
       width: 100%;
-      height: 170px;
-      margin-top: 5%;
+      height: 160px;
+      margin-top: 3%;
     }
   
     .mario_text1 {
@@ -353,7 +359,14 @@
     .box {
       margin: 10% auto;
       padding-bottom: 148%;
+    }
+    .character {
+      margin-top: 27%;
+      margin-left: 20%;
   }
+    .content{
+      margin-top: 20%;
+    }
     /* section02 end */
       /* section05 start */
       #section05 h1 {
