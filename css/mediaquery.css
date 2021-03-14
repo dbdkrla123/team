@@ -29,6 +29,10 @@
     .container2{
       width: 100%;
     }
+    .box{
+      margin: 15% auto;
+      padding-bottom: 60%;
+    }
     .box img{
     width: 210px;
     height: 210px;
@@ -87,9 +91,9 @@
     .center button {
       top: 22%;
   }
-  .products li>p {
+    .products li>p {
     font-size: 25px;
-}
+  }
     /* section5 end */
   
 
@@ -144,11 +148,14 @@
   }
 
   /* section05 start */
-  .products li>p {
-    font-size: 20px;
-    font-weight: 500;
+  #section05 h1 {
+    font-size: 2rem;
   }
-  } 
+
+  .button {
+    width: 12rem;
+  }
+} 
   
   @media(max-width:541px){
   
@@ -187,7 +194,6 @@
       padding-top: 15%;
   }
     /* section03 end */
-  }
   
     .section05 .text>p {
     font-size: 2rem;
@@ -198,6 +204,13 @@
     font-weight: 700;
   }
 
+  /* section05 start */
+  .button {
+    width: 9rem;
+    font-size: 14px;
+  }
+  /* section05 end */
+}
   @media(max-width:415px){
       .box1{
         width:50%;
@@ -224,10 +237,14 @@
         margin-top:10%;
         margin-left:20%;
       }
+      .box {
+        margin: 7% auto;
+        padding-bottom: 107%;
+    }
       .character img {
         width: 50%;
         margin: 0 auto;
-    }
+      }
       .content{
         width: 100%;
         height: 150px;
@@ -246,7 +263,7 @@
       .bar {
         font-size: 17px;
         font-weight: 600;
-    }
+      }
       .cont_box {
       padding-top: 20%;
       }
@@ -257,27 +274,15 @@
       /* section03 end */
 
       /* section05 start */
-      .text{
-        padding-top: 11%;
+      #section05 h1 {
+        font-size: 25px;
       }
-      .section05 .text>.subtitle {
-        font-size: 1.5rem;
-      font-weight: 200;
+    .button {
+      width: 7rem;
+      font-size: 13px;
       }
-      .products li {
-        float: none;
-        width: 100%;
-        padding: 5%;
-        margin-top: 10%;
-      }
-      .products li>img {
-        width: 70%;
-      }
-      .products li>p {
-        font-size: 20px;
-        font-weight: 700;
-      }
-    /* section05 end */
+    }      
+      /* section05 end */
 
   @media(max-width:376px){
     .container2{
@@ -296,7 +301,10 @@
     font-size: 30px;
     font-weight: 400;
   }
-  
+  .box {
+    margin: 10% auto;
+    padding-bottom: 125%;
+}
   /* section2 end */
   .text>.subtitle{
     font-size: 20px;
@@ -304,12 +312,18 @@
   }
 
   /* section3 start */
-  /* .bg_box{
-  margin: 30% auto;
-  } */
+
+
   /* section3 end */
   } 
+  @media(max-width:361px){
+    .box {
+      margin: 5% auto;
+      padding-bottom: 136%;
+  }
+  }
   
+
   @media(max-width:321px){
     .box img{
       width: 90px;
@@ -331,3 +345,23 @@
       font-size: 25px;
       font-weight: 300;
     }
+  }
+
+  @media(max-width:281px){
+
+    /* section02 start */
+    .box {
+      margin: 10% auto;
+      padding-bottom: 148%;
+  }
+    /* section02 end */
+      /* section05 start */
+      #section05 h1 {
+        font-size: 15px;
+      }
+    .button {
+      width: 5rem;
+      font-size: 10px;
+      }  
+      /* section05 end */
+  }

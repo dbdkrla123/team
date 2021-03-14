@@ -790,8 +790,6 @@ figure.snip1200.hover p {
 
 /* section5 start */
 
-
-
 :root {
   --container-bg-color: #333;
   --left-bg-color: rgba(223, 99, 44, 0.7);
@@ -804,6 +802,7 @@ figure.snip1200.hover p {
   --other-width: 32%;
   --speed: 500ms;
 }
+
 
 html, body {
   padding:0;
@@ -822,6 +821,7 @@ html, body {
   top: 35%;
   transform: translateX(-50%);
   white-space: nowrap;
+  text-align: center;
 }
 
 .button {
@@ -930,9 +930,8 @@ html, body {
 }
 
 .hover-left .right:before {
-  zz-index: 2;
+  z-index: 2;
 }
-
 
 .hover-middle .middle {
   width: var(--hover-width);
@@ -946,9 +945,8 @@ html, body {
 }
 
 .hover-middle .middle:before {
-  zz-index: 2;
+  z-index: 2;
 }
-
 
 .hover-right .right {
   width: var(--hover-width);
@@ -963,22 +961,7 @@ html, body {
 }
 
 .hover-right .left:before {
-  zz-index: 2;
+  z-index: 2;
 }
 
-@media(max-width: 800px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  .button {
-    width: 12rem;
-  }
-}
-
-@media(max-height: 700px) {
-  .button {
-    top: 70%;
-  }
-}
 /* section5 end */
