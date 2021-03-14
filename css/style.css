@@ -72,7 +72,7 @@
 .side-menu ul li:nth-child(2) { background-color: #fd7404;}
 .side-menu ul li:nth-child(3) { background-color: #00a300;}
 .side-menu ul li:nth-child(4) { background-color: #ffc40d;}
-.side-menu ul li:nth-child(5) { background-color: #1e7145;}
+.side-menu ul li:nth-child(5) { background-color: #1a4ab2;}
 
 .side-menu ul li:hover {
   background-color: #1a4ab2; /*you can make different colors depending on the nth-child like above*/
@@ -374,8 +374,6 @@ display:block;
   border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
   animation: borderRotate var(--d) linear infinite forwards;
 }
-
-
 
 /* content animation css start */
 
@@ -772,11 +770,12 @@ figure.snip1200.hover p {
 
 :root {
   --container-bg-color: #333;
-  --left-bg-color: rgba(223, 99, 44, 0.7);
+  --left-bg-color:rgba(255, 0, 0, 0.5); 
+  /* rgba(223, 99, 44, 0.7); */
   --left-button-hover-color: rgba(255, 255, 255, 0.3);
-  --middle-bg-color: rgba(223, 99, 44, 0.7);
+  --middle-bg-color: rgba(83, 44, 223, 0.5);
   --middle-button-hover-color: rgba(255, 255, 255, 0.3);
-  --right-bg-color: rgba(223, 99, 44, 0.7);
+  --right-bg-color: rgba(227, 241, 18, 0.5);
   --right-button-hover-color: rgba(255, 255, 255, 0.3);
   --hover-width: 36%;
   --other-width: 32%;
@@ -796,6 +795,7 @@ html, body {
   font-family: 'MaplestoryOTFLight';
   font-size: 4rem;
   color: #fff;
+  font-weight: 600;
   position: absolute;
   left: 50%;
   top: 35%;
@@ -815,7 +815,6 @@ html, body {
   text-align: center;
   color: #fff;
   border: #fff solid 0.2rem;
-  font-family: ;
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -837,7 +836,6 @@ html, body {
   background-color: var(--right-button-hover-color);
   border-color: var(--right-button-hover-color);
 }
-
 .container {
   position: relative;
   width: 100%;
