@@ -238,9 +238,9 @@
   }
   .modal-bg1{
     width:100%;
-
     background:rgba(0,0,0,0.9);
     position: absolute;
+    background-size: cover;
     display: none;
     z-index: 999;
   }
