@@ -1,13 +1,10 @@
 @import url('reset.css');
 
-@import url('http://db.onlinewebfonts.com/c/6c02f15fdbc9dd7c482b52b06d8e0a6c?family=Super+Mario+256');
+@import url('https://db.onlinewebfonts.com/c/6c02f15fdbc9dd7c482b52b06d8e0a6c?family=Super+Mario+256');
 
 /* section2 content animation */
 @import url("https://fonts.googleapis.com/css?family=Raleway:400");
 
-/* section3 font */
-
-@import url(http://fonts.googleapis.com.css?family=Roboto:400,100);
 
 * {
   box-sizing: border-box;
@@ -39,6 +36,69 @@
   font-style: normal;
 }
 
+/* side-menu start */
+
+.side-menu {
+  width: 220px;
+  height: auto;
+  margin: 15% auto 0;
+  font-size: 1em;
+  line-height: 2em;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -10em;
+  z-index: 999;
+}
+.side-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.side-menu ul li {
+  display:block;
+  background-color: #333;
+  height: 4em;
+  padding: 1em 1.5em;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.5s,     background-color .5s, color .5s;
+  transition: transform .5s, background-color .5s, color .5s;
+}
+/*the colors of the different columns*/
+.side-menu ul li:nth-child(1) { background-color: #44a9f1;}
+.side-menu ul li:nth-child(2) { background-color: #1a4ab2;}
+.side-menu ul li:nth-child(3) { background-color: #00a300;}
+.side-menu ul li:nth-child(4) { background-color: #ffc40d;}
+.side-menu ul li:nth-child(5) { background-color: #1e7145;}
+.side-menu ul li:nth-child(6) { background-color: #cb2027;}
+
+.side-menu ul li:hover {
+  background-color: #1a4ab2; /*you can make different colors depending on the nth-child like above*/
+  -webkit-transform: translateX(7em);
+  transform: translateX(10em);/*equal to left in the .side-menu*/
+}
+.side-menu ul li a {
+display:block;
+  color: #FFF;
+  text-decoration: none;
+}
+.side-menu ul li span {
+  display:block;
+  position: absolute;
+  font-size:1em;
+  line-height: 2em;
+  height:2em;
+  top:0; 
+  bottom:0;
+  margin:0 auto;
+  padding:1em 1.5em;
+  right: 0.16666666666667em;
+  color: #F8F6FF;
+}
+/* side menu end */
 
 /* section01 start */
 
@@ -53,6 +113,9 @@
 }
 .d-row>div{
   float: left;
+}
+.col-3{
+  text-align: center;
 }
 .col-3 h1{
     font-family: "Super Mario 256"; 
@@ -201,12 +264,13 @@
 }
 .box{
   width: 100%;
-  margin: 0 auto;
+  margin: 5% auto;
+  text-align: center;
 }
 .box img{
   width: 320px;
   height: 320px;
-  margin:20%;
+  margin: 10%;
 }
 .box1{
   float: left;
@@ -238,6 +302,10 @@
   }
   .modal-bg1{
     width:100%;
+<<<<<<< HEAD
+=======
+    height: 100%;
+>>>>>>> 48f40263c6d8a4521c6f1011e971077e96968784
     background:rgba(0,0,0,0.9);
     position: absolute;
     background-size: cover;
@@ -246,6 +314,7 @@
   }
   .modal-bg2{
     width:100%;
+    height: 100%;
     background:rgba(0,0,0,0.9);
     position: absolute;
     display: none;
@@ -253,6 +322,7 @@
   }
   .modal-bg3{
     width:100%;
+    height: 100%;
     background:rgba(0,0,0,0.9);
     position: absolute;
     display: none;
@@ -261,6 +331,7 @@
   
   .modal-bg4{
     width:100%;
+    height: 100%;
     background:rgba(0,0,0,0.9);
     position: absolute;
     display: none;
@@ -269,6 +340,7 @@
   
   .modal-bg5{
     width:100%;
+    height: 100%;
     background:rgba(0,0,0,0.9);
     position: absolute;
     display: none;
@@ -277,6 +349,7 @@
   
   .modal-bg6{
     width:100%;
+    height: 100%;
     background:rgba(0,0,0,0.9);
     position: absolute;
     display: none;
@@ -308,6 +381,7 @@
   top: 5%;
   right: 5%;
   color:#fff;
+  font-family: "Super Mario 256";
   font-size: 50px;
   cursor: pointer;
 }
@@ -367,8 +441,6 @@
 
 
 
-
-
 .blur{
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
@@ -412,7 +484,6 @@
   float: left;
   width:33.3%;
 }
-
 .box>div>img:hover {
   animation: shake 0.45s;
   animation-iteration-count: infinite;
@@ -442,8 +513,8 @@
   background-image: url('../images/section2-01.png');
   position: relative;
   background-repeat: no-repeat;
-  /* background-position: center; */
-  background-size: 100%
+  background-position: center;
+  background-size: 100%;
 }
 .bar{
   font-family: 'MaplestoryOTFLight';
@@ -490,7 +561,10 @@
 .bar li.active + li:after{
  background-color: #fff; 
 }
-img{
+.cont_box{
+  padding-top: 5%;
+}
+.section03>.cont_box>.bg_box img{
   width: 100%;
 }
 
@@ -498,7 +572,9 @@ img{
 
 .bg_box {    
   width: 50%;
-  margin: 7% auto;
+  margin: 0 auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 /* .img01{
   display: none;
@@ -578,6 +654,9 @@ img{
   background: rgba(0,0,0,.5);
   border: none;
 }
+.center button:focus{
+  display: none;
+}
 .center button.slick-prev{
 left: 0;
 }
@@ -616,7 +695,7 @@ figure.snip1200 * {
 figure.snip1200 img {
   max-width: 100%;
   position: relative;
-  opacity: 0.9;
+  opacity: 0.6;
 }
 figure.snip1200 figcaption {
   position: absolute;
@@ -624,7 +703,6 @@ figure.snip1200 figcaption {
   left: 7%;
   right: 7%;
   bottom: 45%;
-  border: 1px solid white;
   border-width: 1px 1px 0;
 }
 figure.snip1200 .heading {
@@ -686,14 +764,17 @@ figure.snip1200 a {
 }
 figure.snip1200:hover img,
 figure.snip1200.hover img {
-  opacity: 0.25;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  opacity: 0.3;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 figure.snip1200:hover figcaption,
 figure.snip1200.hover figcaption {
   top: 7%;
   bottom: 7%;
+  border: 1px solid white;
+  border-bottom: none;
+  border-radius: 25px 25px 0px 0px;
 }
 figure.snip1200:hover p,
 figure.snip1200.hover p {
@@ -701,5 +782,203 @@ figure.snip1200.hover p {
   -webkit-transition-delay: 0.35s;
   transition-delay: 0.35s;
 }
-
+.clearfix{
+  clear: both;
+}
 /* section4 end */
+
+
+/* section5 start */
+
+
+
+:root {
+  --container-bg-color: #333;
+  --left-bg-color: rgba(223, 99, 44, 0.7);
+  --left-button-hover-color: rgba(255, 255, 255, 0.3);
+  --middle-bg-color: rgba(223, 99, 44, 0.7);
+  --middle-button-hover-color: rgba(255, 255, 255, 0.3);
+  --right-bg-color: rgba(223, 99, 44, 0.7);
+  --right-button-hover-color: rgba(255, 255, 255, 0.3);
+  --hover-width: 36%;
+  --other-width: 32%;
+  --speed: 500ms;
+}
+
+html, body {
+  padding:0;
+  margin:0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.container h1 {
+  font-family: 'MaplestoryOTFLight';
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  height: 2.5rem;
+  padding-top: 1.5%;
+  width: 15rem;
+  text-align: center;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-family: ;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
+}
+
+.split.left .button:hover {
+  background-color: var(--left-button-hover-color);
+  border-color: var(--left-button-hover-color);
+}
+
+.split.middle .button:hover {
+  background-color: var(--middle-button-hover-color);
+  border-color: var(--middle-button-hover-color);
+}
+
+.split.right .button:hover {
+  background-color: var(--right-button-hover-color);
+  border-color: var(--right-button-hover-color);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--container-bg-color);
+}
+
+.split {
+  position: relative;
+  width: 33%;
+  height: 100%;
+  float:left;
+  overflow: hidden;
+}
+
+.split.left {
+  background: url('../images/split_mario1.jfif') center center no-repeat;
+  background-size: cover;
+}
+
+.split.left:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--left-bg-color);
+}
+
+.split.middle {
+  background: url('../images/split_mario4.jfif') center center no-repeat;
+  background-size: cover;
+}
+
+.split.middle:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--middle-bg-color);
+}
+
+
+.split.right {
+  background: url('../images/split_mario3.jfif') center center no-repeat;
+  background-size: cover;
+}
+
+.split.right:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--right-bg-color);
+}
+
+.split.left, .split.middle, .split.right, .split.right:before, .split.middle:before, .split.left:before {
+  transition: var(--speed) all ease-in-out;
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .middle {
+  width: var(--other-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-left .right:before {
+  zz-index: 2;
+}
+
+
+.hover-middle .middle {
+  width: var(--hover-width);
+}
+
+.hover-middle .left {
+  width: var(--other-width);
+}
+.hover-middle .right {
+  width: var(--other-width);
+}
+
+.hover-middle .middle:before {
+  zz-index: 2;
+}
+
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .middle {
+  width: var(--other-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+.hover-right .left:before {
+  zz-index: 2;
+}
+
+@media(max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .button {
+    width: 12rem;
+  }
+}
+
+@media(max-height: 700px) {
+  .button {
+    top: 70%;
+  }
+}
+/* section5 end */
