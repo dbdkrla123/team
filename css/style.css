@@ -820,6 +820,7 @@ html, body {
   text-transform: uppercase;
   text-decoration: none;
   transform: translateX(-50%);
+  z-index: 999;
 }
 
 .split.left .button:hover {
